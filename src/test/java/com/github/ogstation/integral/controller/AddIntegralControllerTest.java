@@ -54,4 +54,24 @@ public class AddIntegralControllerTest
                 .andDo(print())
                 .andExpect(status().isOk());
     }
+
+    @Test
+    public void should_be_able_to_return_bad_request_error_if_member_is_not_here() throws Exception
+    {
+        // given
+        AddIntegral addIntegral = new AddIntegral();
+        GasStation gasStation = new GasStation();
+        gasStation.setName("gas station");
+        addIntegral.setGasStation(gasStation);
+        addIntegral.setAmount(new BigDecimal(500));
+
+        // when
+
+        // then
+        this.mockMvc.perform(post("/api/integral")
+                .contentType(APPLICATION_JSON)
+                .content(new ObjectMapper().writeValueAsString(addIntegral)))
+                .andDo(print())
+                .andExpect(status().isBadRequest());
+    }
 }

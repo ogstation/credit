@@ -6,7 +6,9 @@ import java.math.BigDecimal;
 
 public class AddIntegral
 {
+    @NotNull(message = "{integral.member.not.empty}")
     private Member member;
+    @NotNull(message = "{integral.gasstation.not.empty}")
     private GasStation gasStation;
     @NotNull(message = "{integral.amount.not.empty}")
     private BigDecimal amount;

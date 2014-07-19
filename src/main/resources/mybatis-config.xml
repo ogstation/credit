@@ -6,10 +6,8 @@
 
     <typeAliases>
         <typeAlias alias="Pageable" type="org.springframework.data.domain.Pageable" />
-        <typeAlias alias="GasStation" type="com.github.com.github.ogstation.gas.com.github.ogstation.integral.domain.GasStation" />
     </typeAliases>
 
     <mappers>
-        <mapper resource="com/github/com.github.ogstation/gas/station/mapper/GasStation.xml"/>
     </mappers>
 </configuration>
