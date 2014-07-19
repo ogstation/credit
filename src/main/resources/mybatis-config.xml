@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <typeAliases>
+        <typeAlias alias="Pageable" type="org.springframework.data.domain.Pageable" />
+        <typeAlias alias="GasStation" type="com.github.com.github.ogstation.gas.com.github.ogstation.integral.domain.GasStation" />
+    </typeAliases>
+
+    <mappers>
+        <mapper resource="com/github/com.github.ogstation/gas/station/mapper/GasStation.xml"/>
+    </mappers>
+</configuration>
