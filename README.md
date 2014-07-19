@@ -18,3 +18,22 @@ API
 * /api/error/403: handle 403 error
 * /api/error/404: handle 404 error
 * /api/error/500: handle 500 error
+
+
+* /api/integral(POST): add integral for member
+```
+Post data
+{  
+   "member":{  
+      "id":"id",
+      "identityCard":"identity_card",
+      "telephone":"15912345678",
+      "email":"test@test.com"
+   },
+   "gasStation":{  
+      "id":"id",
+      "name":"name"
+   },
+   "amount":"2000"
+}
+```
