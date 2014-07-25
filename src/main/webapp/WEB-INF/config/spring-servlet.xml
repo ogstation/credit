@@ -22,9 +22,9 @@
     </mvc:annotation-driven>
 
 
-    <context:component-scan base-package="com.github.ogstation.integral.config"/>
-    <context:component-scan base-package="com.github.ogstation.integral.validator"/>
-    <context:component-scan base-package="com.github.ogstation.integral.dao"/>
-    <context:component-scan base-package="com.github.ogstation.integral.service"/>
-    <context:component-scan base-package="com.github.ogstation.integral.controller"/>
+    <context:component-scan base-package="com.github.ogstation.credit.config"/>
+    <context:component-scan base-package="com.github.ogstation.credit.validator"/>
+    <context:component-scan base-package="com.github.ogstation.credit.dao"/>
+    <context:component-scan base-package="com.github.ogstation.credit.service"/>
+    <context:component-scan base-package="com.github.ogstation.credit.controller"/>
 </beans>

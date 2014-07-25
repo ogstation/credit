@@ -1,6 +1,6 @@
-package com.github.ogstation.integral.controller;
+package com.github.ogstation.credit.controller;
 
-import com.github.ogstation.integral.config.MessageResolver;
+import com.github.ogstation.credit.config.MessageResolver;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InjectMocks;

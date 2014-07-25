@@ -1,27 +1,27 @@
-package com.github.ogstation.integral.controller;
+package com.github.ogstation.credit.controller;
 
-import com.github.ogstation.integral.config.MessageResolver;
-import com.github.ogstation.integral.domain.error.GlobalRestError;
+import com.github.ogstation.credit.config.MessageResolver;
+import com.github.ogstation.credit.domain.error.GlobalRestError;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import static com.github.ogstation.integral.helper.MessageCodes.GLOBAL_ERROR_400;
-import static com.github.ogstation.integral.helper.MessageCodes.GLOBAL_ERROR_401;
-import static com.github.ogstation.integral.helper.MessageCodes.GLOBAL_ERROR_403;
-import static com.github.ogstation.integral.helper.MessageCodes.GLOBAL_ERROR_404;
-import static com.github.ogstation.integral.helper.MessageCodes.GLOBAL_ERROR_405;
-import static com.github.ogstation.integral.helper.MessageCodes.GLOBAL_ERROR_415;
-import static com.github.ogstation.integral.helper.MessageCodes.GLOBAL_ERROR_500;
-import static com.github.ogstation.integral.helper.RestURIConstants.BAD_REQUEST_ERROR;
-import static com.github.ogstation.integral.helper.RestURIConstants.FORBIDDEN_ERROR;
-import static com.github.ogstation.integral.helper.RestURIConstants.INTERNAL_ERROR;
-import static com.github.ogstation.integral.helper.RestURIConstants.METHOD_NOT_ALLOWED_ERROR;
-import static com.github.ogstation.integral.helper.RestURIConstants.NOT_FOUND_ERROR;
-import static com.github.ogstation.integral.helper.RestURIConstants.UNAUTHORIZED_ERROR;
-import static com.github.ogstation.integral.helper.RestURIConstants.UNSUPPRTED_MEDIA_TYPE_ERROR;
+import static com.github.ogstation.credit.helper.MessageCodes.GLOBAL_ERROR_400;
+import static com.github.ogstation.credit.helper.MessageCodes.GLOBAL_ERROR_401;
+import static com.github.ogstation.credit.helper.MessageCodes.GLOBAL_ERROR_403;
+import static com.github.ogstation.credit.helper.MessageCodes.GLOBAL_ERROR_404;
+import static com.github.ogstation.credit.helper.MessageCodes.GLOBAL_ERROR_405;
+import static com.github.ogstation.credit.helper.MessageCodes.GLOBAL_ERROR_415;
+import static com.github.ogstation.credit.helper.MessageCodes.GLOBAL_ERROR_500;
+import static com.github.ogstation.credit.helper.RestURIConstants.BAD_REQUEST_ERROR;
+import static com.github.ogstation.credit.helper.RestURIConstants.FORBIDDEN_ERROR;
+import static com.github.ogstation.credit.helper.RestURIConstants.INTERNAL_ERROR;
+import static com.github.ogstation.credit.helper.RestURIConstants.METHOD_NOT_ALLOWED_ERROR;
+import static com.github.ogstation.credit.helper.RestURIConstants.NOT_FOUND_ERROR;
+import static com.github.ogstation.credit.helper.RestURIConstants.UNAUTHORIZED_ERROR;
+import static com.github.ogstation.credit.helper.RestURIConstants.UNSUPPRTED_MEDIA_TYPE_ERROR;
 
 @RestController
 public class GlobalErrorHandlerController

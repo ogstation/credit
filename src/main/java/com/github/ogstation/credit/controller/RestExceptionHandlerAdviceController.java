@@ -1,7 +1,7 @@
-package com.github.ogstation.integral.controller;
+package com.github.ogstation.credit.controller;
 
-import com.github.ogstation.integral.domain.error.RestError;
-import com.github.ogstation.integral.domain.error.RestErrorResponse;
+import com.github.ogstation.credit.domain.error.RestError;
+import com.github.ogstation.credit.domain.error.RestErrorResponse;
 import com.google.common.base.Function;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;

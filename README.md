@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/ogstation/integral.svg)](https://travis-ci.org/ogstation/integral)
+[![Build Status](https://travis-ci.org/ogstation/credit.svg)](https://travis-ci.org/ogstation/credit)
 
-integral
+credit
 ===========
 
 How to build ?
@@ -20,7 +20,7 @@ API
 * /api/error/500: handle 500 error
 
 
-* /api/integral(POST): add integral for member
+* /api/credit(POST): add credit for member
 ```
 Post data
 {  

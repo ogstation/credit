@@ -6,20 +6,20 @@
     <modelVersion>4.0.0</modelVersion>
     
     <groupId>com.github.ogstation</groupId>
-    <artifactId>integral</artifactId>
+    <artifactId>credit</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>war</packaging>
     
     <organization>
         <name>com.github.ogstation</name>
-        <url>https://github.com/integral</url>
+        <url>https://github.com/credit</url>
     </organization>
     
-    <name>integral</name>
+    <name>credit</name>
     <scm>
-        <connection>scm:git:ssh://git@github.com:ogstation/integral.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com:ogstation/integral.git</developerConnection>
-        <url>https://github.com/ogstation/integral</url>
+        <connection>scm:git:ssh://git@github.com:ogstation/credit.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:ogstation/credit.git</developerConnection>
+        <url>https://github.com/ogstation/credit</url>
     </scm>
     
     <dependencyManagement>
@@ -125,7 +125,7 @@
     </dependencies>
     
     <build>
-        <finalName>integral</finalName>
+        <finalName>credit</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -205,8 +205,8 @@
                     </formats>
                     <instrumentation>
                         <excludes>
-                            <exclude>com/github/ogstation/integral/domain/**/*.class</exclude>
-                            <exclude>com/github/ogstation/integral/helper/*.class</exclude>
+                            <exclude>com/github/ogstation/credit/domain/**/*.class</exclude>
+                            <exclude>com/github/ogstation/credit/helper/*.class</exclude>
                         </excludes>
                     </instrumentation>
                 </configuration>

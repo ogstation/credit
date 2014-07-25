@@ -1,6 +1,6 @@
-package com.github.ogstation.integral.helper;
+package com.github.ogstation.credit.helper;
 
-import com.github.ogstation.integral.controller.RestExceptionHandlerAdviceController;
+import com.github.ogstation.credit.controller.RestExceptionHandlerAdviceController;
 import org.springframework.context.MessageSource;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.method.annotation.ExceptionHandlerMethodResolver;

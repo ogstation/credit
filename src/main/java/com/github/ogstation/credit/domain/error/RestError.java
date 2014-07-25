@@ -1,4 +1,4 @@
-package com.github.ogstation.integral.domain.error;
+package com.github.ogstation.credit.domain.error;
 
 public class RestError
 {

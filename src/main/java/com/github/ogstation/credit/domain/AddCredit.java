@@ -1,16 +1,16 @@
-package com.github.ogstation.integral.domain;
+package com.github.ogstation.credit.domain;
 
 
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
-public class AddIntegral
+public class AddCredit
 {
-    @NotNull(message = "{integral.member.not.empty}")
+    @NotNull(message = "{credit.member.not.empty}")
     private Member member;
-    @NotNull(message = "{integral.gasstation.not.empty}")
+    @NotNull(message = "{credit.gasstation.not.empty}")
     private GasStation gasStation;
-    @NotNull(message = "{integral.amount.not.empty}")
+    @NotNull(message = "{credit.amount.not.empty}")
     private BigDecimal amount;
 
     public Member getMember()

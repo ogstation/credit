@@ -1,4 +1,4 @@
-package com.github.ogstation.integral.domain;
+package com.github.ogstation.credit.domain;
 
 public class Member
 {

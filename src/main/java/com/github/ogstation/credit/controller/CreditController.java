@@ -1,6 +1,6 @@
-package com.github.ogstation.integral.controller;
+package com.github.ogstation.credit.controller;
 
-import com.github.ogstation.integral.domain.AddIntegral;
+import com.github.ogstation.credit.domain.AddCredit;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,11 +12,11 @@ import static org.springframework.http.HttpStatus.OK;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 @RestController
-public class IntegralController
+public class CreditController
 {
 
-    @RequestMapping(value = "/api/integral", method = POST)
-    public ResponseEntity<String> add(@Valid @RequestBody AddIntegral addIntegral)
+    @RequestMapping(value = "/api/credit", method = POST)
+    public ResponseEntity<String> add(@Valid @RequestBody AddCredit addCredit)
     {
         return new ResponseEntity<String>(OK);
     }

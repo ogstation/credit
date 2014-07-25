@@ -1,4 +1,4 @@
-package com.github.ogstation.integral.config;
+package com.github.ogstation.credit.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;

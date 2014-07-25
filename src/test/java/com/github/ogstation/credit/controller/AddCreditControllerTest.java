@@ -1,9 +1,9 @@
-package com.github.ogstation.integral.controller;
+package com.github.ogstation.credit.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.github.ogstation.integral.domain.AddIntegral;
-import com.github.ogstation.integral.domain.GasStation;
-import com.github.ogstation.integral.domain.Member;
+import com.github.ogstation.credit.domain.AddCredit;
+import com.github.ogstation.credit.domain.GasStation;
+import com.github.ogstation.credit.domain.Member;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InjectMocks;
@@ -18,39 +18,39 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.setup.MockMvcBuilders.standaloneSetup;
 
-public class AddIntegralControllerTest
+public class AddCreditControllerTest
 {
     private MockMvc mockMvc;
 
     @InjectMocks
-    private IntegralController integralController;
+    private CreditController creditController;
 
     @Before
     public void setUp() throws Exception
     {
         MockitoAnnotations.initMocks(this);
-        this.mockMvc = standaloneSetup(integralController).build();
+        this.mockMvc = standaloneSetup(creditController).build();
     }
 
     @Test
     public void should_be_able_to_add_integral() throws Exception
     {
         // given
-        AddIntegral addIntegral = new AddIntegral();
+        AddCredit addCredit = new AddCredit();
         Member member = new Member();
         member.setEmail("test@test.com");
-        addIntegral.setMember(member);
+        addCredit.setMember(member);
         GasStation gasStation = new GasStation();
         gasStation.setName("gas station");
-        addIntegral.setGasStation(gasStation);
-        addIntegral.setAmount(new BigDecimal(500));
+        addCredit.setGasStation(gasStation);
+        addCredit.setAmount(new BigDecimal(500));
 
         // when
 
         // then
-        this.mockMvc.perform(post("/api/integral")
+        this.mockMvc.perform(post("/api/credit")
                 .contentType(APPLICATION_JSON)
-                .content(new ObjectMapper().writeValueAsString(addIntegral)))
+                .content(new ObjectMapper().writeValueAsString(addCredit)))
                 .andDo(print())
                 .andExpect(status().isOk());
     }
@@ -59,18 +59,18 @@ public class AddIntegralControllerTest
     public void should_be_able_to_return_bad_request_error_if_member_is_not_here() throws Exception
     {
         // given
-        AddIntegral addIntegral = new AddIntegral();
+        AddCredit addCredit = new AddCredit();
         GasStation gasStation = new GasStation();
         gasStation.setName("gas station");
-        addIntegral.setGasStation(gasStation);
-        addIntegral.setAmount(new BigDecimal(500));
+        addCredit.setGasStation(gasStation);
+        addCredit.setAmount(new BigDecimal(500));
 
         // when
 
         // then
-        this.mockMvc.perform(post("/api/integral")
+        this.mockMvc.perform(post("/api/credit")
                 .contentType(APPLICATION_JSON)
-                .content(new ObjectMapper().writeValueAsString(addIntegral)))
+                .content(new ObjectMapper().writeValueAsString(addCredit)))
                 .andDo(print())
                 .andExpect(status().isBadRequest());
     }

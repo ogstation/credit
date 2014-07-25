@@ -1,4 +1,4 @@
-package com.github.ogstation.integral.config;
+package com.github.ogstation.credit.config;
 
 public interface MessageResolver
 {

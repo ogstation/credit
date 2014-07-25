@@ -1,4 +1,4 @@
-package com.github.ogstation.integral.helper;
+package com.github.ogstation.credit.helper;
 
 public final class RestURIConstants
 {
