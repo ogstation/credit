@@ -11,13 +11,8 @@ public final class RestURIConstants
     public static final String UNSUPPRTED_MEDIA_TYPE_ERROR = "/api/error/415";
     public static final String INTERNAL_ERROR = "/api/error/500";
 
-    // GasStationController
-    public static final String CREATE_STATION = "/api/stations";
-    public static final String GET_ALL_STATION = "/api/stations";
-    public static final String GET_STATION = "/api/stations/{id}";
-    public static final String SEARCH_STATION = "/api/stations/search";
-    public static final String UPDATE_STATION = "/api/stations/{id}";
-    public static final String DELETE_STATION = "/api/stations/{id}";
+    // CreditController
+    public static final String ADD_CREDIT = "/api/credit";
 
     private RestURIConstants()
     {

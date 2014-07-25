@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
 
+import static com.github.ogstation.credit.helper.RestURIConstants.ADD_CREDIT;
 import static org.springframework.http.HttpStatus.OK;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
@@ -15,7 +16,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.POST;
 public class CreditController
 {
 
-    @RequestMapping(value = "/api/credit", method = POST)
+    @RequestMapping(value = ADD_CREDIT, method = POST)
     public ResponseEntity<String> add(@Valid @RequestBody AddCredit addCredit)
     {
         return new ResponseEntity<String>(OK);
