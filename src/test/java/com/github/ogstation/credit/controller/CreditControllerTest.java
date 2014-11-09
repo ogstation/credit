@@ -1,7 +1,7 @@
 package com.github.ogstation.credit.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.github.ogstation.credit.domain.AddCredit;
+import com.github.ogstation.credit.domain.Credit;
 import com.github.ogstation.credit.domain.GasStation;
 import com.github.ogstation.credit.domain.Member;
 import org.junit.Before;
@@ -18,7 +18,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.setup.MockMvcBuilders.standaloneSetup;
 
-public class AddCreditControllerTest
+public class CreditControllerTest
 {
     private MockMvc mockMvc;
 
@@ -36,21 +36,21 @@ public class AddCreditControllerTest
     public void should_be_able_to_add_integral() throws Exception
     {
         // given
-        AddCredit addCredit = new AddCredit();
+        Credit credit = new Credit();
         Member member = new Member();
         member.setEmail("test@test.com");
-        addCredit.setMember(member);
+        credit.setMember(member);
         GasStation gasStation = new GasStation();
         gasStation.setName("gas station");
-        addCredit.setGasStation(gasStation);
-        addCredit.setAmount(new BigDecimal(500));
+        credit.setGasStation(gasStation);
+        credit.setAmount(new BigDecimal(500));
 
         // when
 
         // then
         this.mockMvc.perform(post("/api/credit")
                 .contentType(APPLICATION_JSON)
-                .content(new ObjectMapper().writeValueAsString(addCredit)))
+                .content(new ObjectMapper().writeValueAsString(credit)))
                 .andDo(print())
                 .andExpect(status().isOk());
     }
@@ -59,18 +59,18 @@ public class AddCreditControllerTest
     public void should_be_able_to_return_bad_request_error_if_member_is_not_here() throws Exception
     {
         // given
-        AddCredit addCredit = new AddCredit();
+        Credit credit = new Credit();
         GasStation gasStation = new GasStation();
         gasStation.setName("gas station");
-        addCredit.setGasStation(gasStation);
-        addCredit.setAmount(new BigDecimal(500));
+        credit.setGasStation(gasStation);
+        credit.setAmount(new BigDecimal(500));
 
         // when
 
         // then
         this.mockMvc.perform(post("/api/credit")
                 .contentType(APPLICATION_JSON)
-                .content(new ObjectMapper().writeValueAsString(addCredit)))
+                .content(new ObjectMapper().writeValueAsString(credit)))
                 .andDo(print())
                 .andExpect(status().isBadRequest());
     }

@@ -4,13 +4,13 @@ package com.github.ogstation.credit.domain;
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
-public class AddCredit
+public class Credit
 {
-    @NotNull(message = "{credit.member.not.empty}")
+    @NotNull
     private Member member;
-    @NotNull(message = "{credit.gasstation.not.empty}")
+    @NotNull
     private GasStation gasStation;
-    @NotNull(message = "{credit.amount.not.empty}")
+    @NotNull
     private BigDecimal amount;
 
     public Member getMember()

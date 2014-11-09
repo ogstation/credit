@@ -1,6 +1,6 @@
 package com.github.ogstation.credit.controller;
 
-import com.github.ogstation.credit.domain.AddCredit;
+import com.github.ogstation.credit.domain.Credit;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,7 +17,7 @@ public class CreditController
 {
 
     @RequestMapping(value = ADD_CREDIT, method = POST)
-    public ResponseEntity<String> add(@Valid @RequestBody AddCredit addCredit)
+    public ResponseEntity<String> add(@Valid @RequestBody Credit credit)
     {
         return new ResponseEntity<String>(OK);
     }
