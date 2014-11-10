@@ -1,6 +1,9 @@
 [![Build Status](https://travis-ci.org/ogstation/credit.svg)](https://travis-ci.org/ogstation/credit)
 
+[![Stories in Ready](https://badge.waffle.io/ogstation/credit.svg?label=analysis&title=Analysis)](http://waffle.io/ogstation/credit)
 [![Stories in Ready](https://badge.waffle.io/ogstation/credit.svg?label=ready&title=Ready)](http://waffle.io/ogstation/credit)
+[![Stories in Ready](https://badge.waffle.io/ogstation/credit.svg?label=in progress&title=In Progress)](http://waffle.io/ogstation/credit)
+[![Stories in Ready](https://badge.waffle.io/ogstation/credit.svg?label=test&title=Test)](http://waffle.io/ogstation/credit)
 
 credit
 ===========
