@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/ogstation/credit.png?label=ready&title=Ready)](https://waffle.io/ogstation/credit)
 [![Build Status](https://travis-ci.org/ogstation/credit.svg)](https://travis-ci.org/ogstation/credit)
 
 [![Stories in Ready](https://badge.waffle.io/ogstation/credit.svg?label=analysis&title=Analysis)](http://waffle.io/ogstation/credit)
